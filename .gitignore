@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Generated output
+output/
+runs/
+results/
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# YOLO model weights
+*.pt
+*.onnx
+*.engine
+
+# Diagnostic/generated images
+diag_*.jpg
+diag_*.png
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
