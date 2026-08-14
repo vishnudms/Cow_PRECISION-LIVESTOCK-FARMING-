@@ -1,0 +1,23 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+        "python.analysis.extraPaths": [
+            "${workspaceFolder}\\src"
+        ],
+        "python.terminal.executeInFileDir": true,
+        "files.exclude": {
+            "**/__pycache__": true,
+            "**/*.pyc": true,
+            "archive/**": true
+        },
+        "search.exclude": {
+            "archive/**": true,
+            "venv/**": true
+        }
+    }
+}
