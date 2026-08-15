@@ -1,0 +1,164 @@
+COW PLF - BODY CONDITION SCORE LABELING PROTOCOL
+=================================================
+
+PROJECT:
+Contactless Cattle Body Condition Score Estimation
+
+BCS SCALE:
+1.00 to 5.00
+
+ALLOWED INCREMENTS:
+0.25
+
+VALID SCORES:
+1.00
+1.25
+1.50
+1.75
+2.00
+2.25
+2.50
+2.75
+3.00
+3.25
+3.50
+3.75
+4.00
+4.25
+4.50
+4.75
+5.00
+
+
+IMPORTANT:
+BCS MUST NOT be calculated from:
+- actual body weight
+- body length
+- heart girth
+- withers height
+- YOLO features
+- model predictions
+
+The BCS value must come from an independent reference assessment.
+
+
+GENERAL SCALE
+
+1.00
+Very severely underconditioned.
+Major skeletal landmarks are extremely prominent.
+
+2.00
+Clearly thin.
+Backbone, ribs and pelvic landmarks are prominent.
+Limited fat covering.
+
+2.50
+Moderately thin.
+Some skeletal landmarks remain obvious,
+but there is more tissue covering than at BCS 2.
+
+2.75
+Slightly thin.
+Backbone may remain visible.
+Hooks/pins are relatively angular.
+
+3.00
+Good/average condition.
+Backbone and pelvic landmarks are rounded.
+Ribs are reasonably covered.
+No obvious deep hollowing around the tailhead.
+
+3.25
+Slightly fleshy.
+More tissue covering over the backbone and pelvic region.
+Landmarks remain identifiable but are increasingly rounded.
+
+3.50
+Good-to-fleshy condition.
+More substantial fat covering.
+Pelvic landmarks remain identifiable.
+
+3.75
+Fleshy.
+Increasing fat deposition around rump/tailhead.
+Landmarks become less prominent.
+
+4.00
+Overconditioned.
+Backbone and ribs are difficult to distinguish.
+Hooks and pins are smooth and well covered.
+
+4.50
+Very overconditioned.
+Strong fat covering.
+Pelvic and rump landmarks are difficult to distinguish.
+
+5.00
+Extremely overconditioned.
+Major skeletal landmarks are heavily obscured by fat.
+
+
+ASSESSMENT RULES
+================
+
+1. Examine the complete cow image.
+
+2. Concentrate on visible body-condition landmarks,
+   especially the loin, rump/pelvic region and tailhead.
+
+3. Do NOT use body weight to decide the score.
+
+4. Do NOT use the computer-vision measurements to decide
+   the score.
+
+5. If the image does not provide enough visual information,
+   mark the assessment as REVIEW rather than guessing.
+
+6. Use 0.25 increments only.
+
+7. The same scoring protocol should be used for every cow.
+
+8. Ideally, the same trained assessor should score the complete
+   dataset.
+
+9. If multiple assessors are available, preserve each assessor's
+   identity so inter-rater agreement can later be measured.
+
+
+LABEL FIELDS
+============
+
+bcs_score:
+Reference BCS value.
+
+bcs_source:
+Example:
+expert
+trained_assessor
+veterinary_assessment
+
+assessor_id:
+Unique assessor identifier.
+
+assessment_notes:
+Optional explanation or uncertainty.
+
+label_status:
+UNLABELED
+LABELED
+REVIEW
+
+
+QUALITY CONTROL
+===============
+
+Before model training:
+
+- Every training cow must have a valid BCS.
+- BCS must be between 1.00 and 5.00.
+- BCS must be a multiple of 0.25.
+- No duplicate cow IDs.
+- No duplicate image IDs.
+- Images marked REVIEW should not enter training.
+- BCS labels must be independent of the ML features.
