@@ -246,8 +246,3 @@ pytest tests/ -v
    Jocher, G., Qiu, J., et al. (2024). *Ultralytics Real-Time Computer Vision.*  
    💻 [GitHub: Ultralytics](https://github.com/ultralytics/ultralytics)
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
