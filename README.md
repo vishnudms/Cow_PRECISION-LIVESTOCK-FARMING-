@@ -7,7 +7,6 @@
 [![Identity](https://img.shields.io/badge/Re--Identification-V5%20Permanent%20ID%20%7C%20Global%20Registry-blue)](#-3-permanent-identity--cross-day-registry)
 [![Biometrics](https://img.shields.io/badge/Biometrics-Morphometrics%20%7C%20Contactless%20BCS-green)](#-4-biometric-morphometrics--bcs)
 [![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey)](#-license)
 
 **An enterprise-grade, edge-ready computer-vision platform for precision dairy and beef cattle management. Combines deep instance segmentation, multi-target tracking, permanent coat-pattern re-identification, contactless morphometrics, and automated Body Condition Scoring (BCS).**
 
