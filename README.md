@@ -10,7 +10,7 @@
 
 **An enterprise-grade, edge-ready computer-vision platform for precision dairy and beef cattle management. Combines deep instance segmentation, multi-target tracking, permanent coat-pattern re-identification, contactless morphometrics, and automated Body Condition Scoring (BCS).**
 
-[Overview](#-1-project-overview) • [Vision Stack](#-2-vision-stack--pipeline) • [Identity Manager](#-3-permanent-identity--cross-day-registry) • [Biometrics & BCS](#-4-biometric-morphometrics--bcs) • [Tech Stack](#-5-technology-stack) • [Repository Structure](#-6-repository-structure) • [Quick Start](#-7-quick-start) • [References](#-9-references--literature)
+[Overview](#-1-project-overview) • [Vision Stack](#-2-vision-stack--pipeline) • [Identity Manager](#-3-permanent-identity--cross-day-registry) • [Biometrics & BCS](#-4-biometric-morphometrics--bcs) • [Tech Stack](#-5-technology-stack) • [Repository Structure](#-6-repository-structure) • [Quick Start](#-7-quick-start) • [References](#-8-references--literature)
 
 </div>
 
